@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-09-21T18:46:17Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.67,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "4mb"
+        },
+        "Owner": "Petr Kr <petrkr@petrkr.net>",
+        "Size": {
+            "X": 222.0066,
+            "Y": 23.2112
+        }
+    }
+}
