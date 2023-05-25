@@ -1988,9 +1988,9 @@ design rules under a new name.</description>
 <wire x1="52.27193125" y1="6.6675" x2="52.07" y2="6.46556875" width="0.1778" layer="16"/>
 <wire x1="52.07" y1="6.46556875" x2="52.07" y2="5.715" width="0.1778" layer="16"/>
 <via x="52.07" y="5.715" extent="1-16" drill="0.35"/>
-<wire x1="61.595" y1="11.415" x2="61.595" y2="11.1125" width="0.1778" layer="16"/>
-<wire x1="61.595" y1="11.1125" x2="59.055" y2="8.5725" width="0.1778" layer="16"/>
-<wire x1="59.055" y1="8.5725" x2="55.88" y2="8.5725" width="0.1778" layer="16"/>
+<wire x1="61.595" y1="11.415" x2="61.595" y2="9.8425" width="0.1778" layer="16"/>
+<wire x1="61.595" y1="9.8425" x2="60.325" y2="8.5725" width="0.1778" layer="16"/>
+<wire x1="60.325" y1="8.5725" x2="55.88" y2="8.5725" width="0.1778" layer="16"/>
 <contactref element="UART" pad="3"/>
 <wire x1="61.92750625" y1="11.415" x2="61.595" y2="11.415" width="0.1778" layer="16"/>
 <wire x1="52.07" y1="5.715" x2="52.07" y2="8.5725" width="0.1778" layer="1"/>
@@ -2058,6 +2058,24 @@ design rules under a new name.</description>
 </signal>
 <signal name="RAS0">
 <contactref element="U$1" pad="14"/>
+<contactref element="U1" pad="6"/>
+<wire x1="22.225" y1="1.905" x2="21.2725" y2="2.8575" width="0.1778" layer="16"/>
+<wire x1="21.2725" y1="4.445" x2="21.2725" y2="2.8575" width="0.1778" layer="16"/>
+<wire x1="48.74676875" y1="1.905" x2="51.519634375" y2="4.677865625" width="0.1778" layer="16"/>
+<via x="51.519634375" y="4.677865625" extent="1-16" drill="0.35"/>
+<wire x1="59.3189" y1="7.56515625" x2="59.3189" y2="7.5664" width="0.1778" layer="1"/>
+<wire x1="59.3189" y1="7.5664" x2="59.3725" y2="7.62" width="0.1778" layer="1"/>
+<wire x1="53.107134375" y1="5.947865625" x2="51.837134375" y2="4.677865625" width="0.1778" layer="1"/>
+<wire x1="51.519634375" y1="4.677865625" x2="51.837134375" y2="4.677865625" width="0.1778" layer="1"/>
+<wire x1="57.701609375" y1="5.947865625" x2="53.107134375" y2="5.947865625" width="0.1778" layer="1"/>
+<wire x1="57.701609375" y1="5.947865625" x2="59.3189" y2="7.56515625" width="0.1778" layer="1"/>
+<wire x1="59.3725" y1="7.62" x2="59.3725" y2="9.2285375" width="0.1778" layer="1"/>
+<wire x1="59.3725" y1="9.2285375" x2="59.06551875" y2="9.53551875" width="0.1778" layer="1"/>
+<via x="59.06551875" y="9.53551875" extent="1-16" drill="0.35"/>
+<wire x1="59.06551875" y1="9.53551875" x2="58.8538" y2="9.7472375" width="0.1778" layer="16"/>
+<wire x1="58.8538" y1="10.5663" x2="58.8538" y2="9.7472375" width="0.1778" layer="16"/>
+<wire x1="58.8538" y1="10.5663" x2="58.9025" y2="10.615" width="0.1778" layer="16"/>
+<wire x1="22.225" y1="1.905" x2="48.74676875" y2="1.905" width="0.1778" layer="16"/>
 </signal>
 <signal name="CAS0H">
 <contactref element="U$1" pad="30"/>
@@ -2503,9 +2521,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="EXTCLK">
 <contactref element="U1" pad="2"/>
-</signal>
-<signal name="PA5">
-<contactref element="U1" pad="6"/>
 </signal>
 <signal name="PA6">
 <contactref element="U1" pad="7"/>
