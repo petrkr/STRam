@@ -200,12 +200,31 @@
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1066,6 +1085,59 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-1.4" y1="-0.85" x2="1.4" y2="-0.85" width="0.127" layer="21"/>
 <rectangle x1="-0.2" y1="-0.2" x2="0.2" y2="0.2" layer="21"/>
 </package>
+<package name="0402_RES">
+<smd name="2" x="0.43306875" y="0" dx="0.535940625" dy="0.5461" layer="1"/>
+<smd name="1" x="-0.43306875" y="0" dx="0.535940625" dy="0.5461" layer="1"/>
+<text x="0" y="0.381" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<wire x1="-0.7" y1="0.4" x2="0.7" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.4" x2="0.7" y2="-0.4" width="0.127" layer="21"/>
+</package>
+<package name="0603-RES">
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="1" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="1" layer="1"/>
+<text x="0" y="0.762" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
+</package>
+<package name="0805_RES">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="-0.2" y1="-0.2" x2="0.2" y2="0.2" layer="21"/>
+</package>
+<package name="1206_RES_HIGH_CLEARANCE">
+<smd name="2" x="1.6" y="0" dx="1" dy="1.7" layer="1"/>
+<smd name="1" x="-1.6" y="0" dx="1" dy="1.7" layer="1"/>
+<text x="0" y="0.981" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.6" y1="0.8" x2="-1.1" y2="0.8" width="0.0508" layer="21"/>
+<wire x1="-1.1" y1="0.8" x2="1.1" y2="0.8" width="0.0508" layer="21"/>
+<wire x1="1.1" y1="0.8" x2="1.6" y2="0.8" width="0.0508" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.0508" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="1.1" y2="-0.8" width="0.0508" layer="21"/>
+<wire x1="1.1" y1="-0.8" x2="-1.1" y2="-0.8" width="0.0508" layer="21"/>
+<wire x1="-1.1" y1="-0.8" x2="-1.6" y2="-0.8" width="0.0508" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.0508" layer="21"/>
+<wire x1="-1.1" y1="0.8" x2="-1.1" y2="-0.8" width="0.0508" layer="21"/>
+<wire x1="1.1" y1="0.8" x2="1.1" y2="-0.8" width="0.0508" layer="21"/>
+</package>
+<package name="0201_RES" urn="urn:adsk.eagle:footprint:23101/1" locally_modified="yes">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; chip&lt;p&gt;
+Source: https://www.ibselectronics.com/pdf/pa/walsin/smt_notes.pdf</description>
+<smd name="1" x="-0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<smd name="2" x="0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<text x="0" y="0.381" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.403" size="0.6096" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<wire x1="-0.4" y1="0.3" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1077,6 +1149,23 @@ In this library the device names are the same as the pin names of the symbols, t
 <rectangle x1="-1.143" y1="-2.032" x2="1.143" y2="-1.524" layer="94"/>
 <text x="-1.27" y="-1.27" size="1.778" layer="95" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="1.27" y="-1.27" size="1.778" layer="96" ratio="12" rot="R270" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-3.81" y1="0" x2="-3.429" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.429" y1="1.016" x2="-2.794" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.016" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.127" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1135,6 +1224,60 @@ In this library the device names are the same as the pin names of the symbols, t
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<description>&lt;b&gt;Resistor&lt;/b&gt;
+Basic schematic elements and footprints for 0201, 0402, 0603, 1206, and PTH resistors.</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0402_RES" package="0402_RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603_RES" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805_RES" package="0805_RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206_RES_HIGH_CLEARANCE" package="1206_RES_HIGH_CLEARANCE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0201_RES" package="0201_RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1551,6 +1694,11 @@ http://www.holtek.com&lt;br&gt;
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C4" library="passives" deviceset="CAPACITOR" device="0402_CAP" value="100nF"/>
+<part name="R2" library="passives" deviceset="RESISTOR" device="0402_RES" value="4k7"/>
+<part name="R1" library="passives" deviceset="RESISTOR" device="0402_RES" value="4k7"/>
+<part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1670,23 +1818,40 @@ http://www.holtek.com&lt;br&gt;
 <instance part="P+10" gate="1" x="180.34" y="0" smashed="yes">
 <attribute name="VALUE" x="182.88" y="0" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC1" gate="G$1" x="127" y="-25.4" smashed="yes">
-<attribute name="NAME" x="129.54" y="-33.02" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="-35.56" size="1.778" layer="96"/>
-<attribute name="LCSC_PART" x="127" y="-25.4" size="1.27" layer="96" display="off"/>
+<instance part="IC1" gate="G$1" x="86.36" y="-33.02" smashed="yes">
+<attribute name="NAME" x="88.9" y="-40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="88.9" y="-43.18" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="86.36" y="-33.02" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="172.72" y="-5.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="169.545" y="-3.175" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY13" gate="GND" x="127" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="125.095" y="-41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY13" gate="GND" x="86.36" y="-45.72" smashed="yes">
+<attribute name="VALUE" x="84.455" y="-48.895" size="1.778" layer="96"/>
 </instance>
-<instance part="P+11" gate="1" x="114.3" y="-25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="114.3" y="-22.86" size="1.778" layer="96" rot="R180"/>
+<instance part="P+11" gate="1" x="73.66" y="-33.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="73.66" y="-30.48" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="139.7" y="85.09" smashed="yes">
 <attribute name="NAME" x="141.224" y="85.471" size="1.778" layer="95"/>
 <attribute name="VALUE" x="141.224" y="80.391" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="99.06" y="-10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="92.9386" y="-6.35" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="95.758" y="-6.35" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R1" gate="G$1" x="104.14" y="-10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="105.6386" y="-6.35" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="108.458" y="-6.35" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="+3V12" gate="G$1" x="101.6" y="5.08" smashed="yes">
+<attribute name="VALUE" x="99.06" y="0" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="104.14" y="-33.02" smashed="yes" rot="R270">
+<attribute name="VALUE" x="99.06" y="-30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V2" gate="G$1" x="139.7" y="-30.48" smashed="yes" rot="R180">
+<attribute name="VALUE" x="137.16" y="-25.4" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -1792,7 +1957,7 @@ http://www.holtek.com&lt;br&gt;
 <segment>
 <pinref part="P+11" gate="1" pin="+5V"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="116.84" y1="-25.4" x2="119.38" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-33.02" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RAS0" class="0">
@@ -1942,7 +2107,7 @@ http://www.holtek.com&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="127" y1="-33.02" x2="127" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-40.64" x2="86.36" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -2283,6 +2448,11 @@ http://www.holtek.com&lt;br&gt;
 <label x="177.8" y="-22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$2" pin="8"/>
 </segment>
+<segment>
+<wire x1="104.14" y1="-12.7" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
+<label x="104.14" y="-15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
@@ -2309,6 +2479,11 @@ http://www.holtek.com&lt;br&gt;
 <wire x1="182.88" y1="-20.32" x2="177.8" y2="-20.32" width="0.1524" layer="91"/>
 <label x="177.8" y="-20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$2" pin="7"/>
+</segment>
+<segment>
+<wire x1="99.06" y1="-12.7" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
+<label x="99.06" y="-15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="OE" class="0">
@@ -2463,12 +2638,27 @@ http://www.holtek.com&lt;br&gt;
 <pinref part="J3" gate="G$2" pin="6"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="+3V3" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-5.08" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-2.54" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-2.54" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+<wire x1="101.6" y1="2.54" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="101.6" y="-2.54"/>
+</segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="93.98" y1="-33.02" x2="101.6" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <pinref part="U$6" gate="G$1" pin="VCC"/>
-<wire x1="134.62" y1="-25.4" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="-25.4" x2="139.7" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-27.94" x2="139.7" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
