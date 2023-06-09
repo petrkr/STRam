@@ -4152,9 +4152,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </classes>
 <parts>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="C1" library="passives" deviceset="CAPACITOR" device="0402_CAP"/>
-<part name="C2" library="passives" deviceset="CAPACITOR" device="0402_CAP"/>
-<part name="C3" library="passives" deviceset="CAPACITOR" device="0402_CAP"/>
+<part name="C1" library="passives" deviceset="CAPACITOR" device="0402_CAP" value="100n"/>
+<part name="C2" library="passives" deviceset="CAPACITOR" device="0402_CAP" value="100n"/>
+<part name="C3" library="passives" deviceset="CAPACITOR" device="0402_CAP" value="100n"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$1" library="memory" deviceset="NN5118160AJ" device="SOCKET"/>
